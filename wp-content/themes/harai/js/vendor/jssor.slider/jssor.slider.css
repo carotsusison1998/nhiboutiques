@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.jssor-slides {
+    margin:0 auto;
+    visibility:hidden;
+}
+.jssor-slides,
+.jssor-slides .slides {
+    position:relative;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+    width:840px;
+    height:362px;
+}
+.jssor-slides .slides {
+    cursor:default;   
+}
+.jssor-slides .slideshow-loading {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+    background-color:rgba(0,0,0,0.7);
+}
+.jssor-slides .slideshow-loading img {
+    margin-top:-19px;
+    position:relative;
+    top:50%;
+    width:38px;
+    height:38px;
+}
+.jssor-slides .nav-slides {
+    position:absolute;
+    bottom:16px;
+    right:16px;
+}
+.jssor-slides .slideshow-loading img {
+    animation-name: jssor_slideshow_loading;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssor_slideshow_loading {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.jssor-slides .nav-slides .i {
+    position:absolute;
+    cursor:pointer;
+    width:12px;
+    height:12px;
+    background: #fff;
+    opacity: .9;
+    border-radius: 100%;
+}
+.jssor-slides .nav-slides .i.iav{
+    background: #0076bf;
+}
+.jssor-slides .slide-arrow {
+    display:block;
+    position:absolute;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    top:0px;
+}
+.jssor-slides .slide-arrow .c {
+    fill:none;
+    stroke:#fff;
+    stroke-width:400;
+    stroke-miterlimit:10;
+}
+.jssor-slides .slide-arrow .a {
+    fill:none;
+    stroke:#fff;
+    stroke-width:400;
+    stroke-miterlimit:10;
+}
+.jssor-slides .slide-arrow:hover {
+    opacity:.8;
+}
+.jssor-slides .slide-arrow.slide-arrowdn {
+    opacity:.6;
+}
+.jssor-slides .slide-arrow.slide-arrowds {
+    opacity:.3;
+    pointer-events:none;
+}
+.jssor-slides .slide-arrow-prev {
+    left:30px;
+}
+.jssor-slides .slide-arrow-prev svg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.jssor-slides .slide-arrow-next {
+    
+    right:30px;
+}
+.jssor-slides .slide-arrow-next svg {
+    
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+@media(max-width: 768px)
+{
+   
+}

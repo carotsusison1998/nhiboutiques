@@ -1,0 +1,47 @@
+/* ==============================================================
+* =========================== register ==========================
+* ===============================================================
+*/
+#poststuff .postbox{
+    max-width: 750px;
+}
+#poststuff .inside{
+    margin: 20px 0 20px 0;
+}
+#poststuff table{
+    border-collapse: collapse;
+    text-align: left;
+}
+#poststuff .top,
+#poststuff .bottom{
+    font-size: 1rem;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#poststuff .top tr,
+#poststuff .bottom tr{
+    border: 1px solid #999;
+}
+#poststuff .title{
+    width: 320px;
+}
+#poststuff .top td,
+#poststuff .bottom td,
+#poststuff .bottom th{
+    padding: 4px 8px;
+}
+#poststuff .hndle{
+    display: flex;
+}
+#poststuff .hndle span{
+    font-size: 1.4rem;
+    text-align: center;
+    color: #252525;
+    margin: auto;
+    font-weight: bold;
+}
+/* ==============================================================
+* =========================== // register =======================
+* ===============================================================
+*/
