@@ -1,0 +1,52 @@
+/* ==============================================================
+* ========================= Production ==========================
+* ===============================================================
+*/
+.products-main{
+	background-color: #fff7f8;
+}
+.new-products{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 0 auto;
+	max-width: 1450px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+}
+.new-products .product{
+	width: calc(100% / 6);
+	padding: 10px;
+    border: 1px solid transparent;
+}
+.new-products .product:hover{
+	border-color: var(--main-color);
+}
+.new-products .product img{
+	width: 100%;
+	height: auto;
+}
+.new-products .product .onsale{
+	position: absolute;
+}
+.new-products .product a{
+	color: var(--black-color);
+	font-size: 16px;
+}
+.new-products .product a .woocommerce-loop-product__title{
+	font-size: 16px;
+	margin-top: 8px;
+}
+.new-products .product a .price{
+	font-size: 16px;
+}
+.new-products .product .add_to_cart_button.ajax_add_to_cart{
+	display: block;
+}
+/* ==============================================================
+* ========================= End Production ======================
+* ===============================================================
+*/

@@ -1,0 +1,83 @@
+2022-04-08T02:39:00+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php:97
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\index.php(1): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php on line 97
+
+2022-04-08T02:39:48+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php:97
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\index.php(1): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php on line 97
+
+2022-04-08T02:40:43+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php:96
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\index.php(1): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php on line 96
+
+2022-04-08T02:40:53+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php:96
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\index.php(1): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php on line 96
+
+2022-04-08T02:41:36+00:00 CRITICAL Uncaught Error: Call to undefined function hk_get_thumb() in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php:96
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\index.php(1): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php on line 96
+
+2022-04-08T06:11:14+00:00 CRITICAL syntax error, unexpected token "<", expecting end of file in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php on line 42
+
+2022-04-08T06:21:13+00:00 CRITICAL Uncaught Error: Undefined constant "DEF_STYLE" in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php:216
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): fl_scripts('')
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-includes\script-loader.php(2115): do_action('wp_enqueue_scri...')
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): wp_enqueue_scripts('')
+#5 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(3042): do_action('wp_head')
+#8 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php(22): wp_head()
+#9 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once('D:\\Php\\wordpres...')
+#10 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#11 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\index.php(15): get_header()
+#13 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#14 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#15 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#16 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php on line 216
+
