@@ -290,6 +290,7 @@ table
 #masthead .container{
   display: flex;
   justify-content: space-between;
+  z-index: 1000;
 }
 #masthead .site-branding{
   display: flex;

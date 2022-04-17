@@ -21,6 +21,7 @@
 	width: calc(100% / 6);
 	padding: 10px;
     border: 1px solid transparent;
+	position: relative;
 }
 .new-products .product:hover{
 	border-color: var(--main-color);
@@ -45,6 +46,26 @@
 }
 .new-products .product .add_to_cart_button.ajax_add_to_cart{
 	display: block;
+}
+.new-products li.product .onsale{
+	top: 0;
+    right: 0;
+    left: auto;
+    margin: -0.5em -0.5em 0 0;
+    min-height: 2.236em;
+    min-width: 2.236em;
+    padding: 0.202em;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 2.236;
+    margin: 0;
+    border-radius: 100%;
+    background-color: #77a464;
+    color: #fff;
+    font-size: 0.857em;
+    z-index: 9;
 }
 /* ==============================================================
 * ========================= End Production ======================
