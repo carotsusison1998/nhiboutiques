@@ -33,21 +33,23 @@
                     $Class: $JssorBulletNavigator$,
                     $SpacingX: 16,
                     $SpacingY: 16
-                }
+                },
             };
-            var elemSlider = new $JssorSlider$("home-slideshow", slideOptions);
+            // var elemSlider = new $JssorSlider$("home-slideshow", slideOptions);
+            var options = { $AutoPlay: 1 };
+        var jssor1_slider = new $JssorSlider$("home-slideshow", options);
             /*#region responsive code begin*/
-            var MAX_WIDTH = 900;
+            var MAX_WIDTH = 1200;
             function ScaleSlider() {
-                var containerElement = elemSlider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-                if (containerWidth) {
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-                    elemSlider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
+                // var containerElement = elemSlider.$Elmt.parentNode;
+                // var containerWidth = containerElement.clientWidth;
+                // if (containerWidth) {
+                //     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+                //     elemSlider.$ScaleWidth(expectedWidth);
+                // }
+                // else {
+                //     window.setTimeout(ScaleSlider, 30);
+                // }
             }
             ScaleSlider();
             $Jssor$.$AddEvent(window, "load", ScaleSlider);

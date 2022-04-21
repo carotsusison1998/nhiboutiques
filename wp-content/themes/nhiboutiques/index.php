@@ -16,6 +16,9 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
+		<!-- slideshow -->
+        	<?php echo get_template_part(TEMPLATES_PARTS, 'slider');?>
+        <!-- //slideshow -->
 		<div class="products-main">
 			<ul class="new-products">
 			<?php 

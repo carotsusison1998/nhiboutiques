@@ -71,3 +71,59 @@
 * ========================= End Production ======================
 * ===============================================================
 */
+
+.share
+{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.share ul
+{
+    width: 100%;
+    text-align: center;
+}
+.share ul li
+{
+    display: inline-block;
+    margin: 5px 8px;
+}
+.share ul li img{
+    width: 38px;
+    height: 38px;
+}
+.share ul li a
+{
+    display: inline-block;
+    padding: 5px 5px;
+}
+.share ul li:last-child a
+{
+    padding-right: 0;
+}
+.banner{
+    width: 100%;
+}
+.home .banner .container
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+@media(max-width: 768px)
+{
+    .banner .container
+    {
+        padding-left: 0;
+        padding-right: 0;   
+    }
+}
+@media (max-width: 414px){
+    .share{
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
+    .share .container
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

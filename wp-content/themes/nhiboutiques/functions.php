@@ -176,6 +176,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 require get_template_directory() . '/inc/constants.php';
+require get_template_directory() . '/inc/libs.php';
 /**
  * ----------------------------------------------------------------------------------------
  * Add the active class to the menu
@@ -215,11 +216,46 @@ if (!function_exists('fl_scripts')) {
         //load css
         wp_enqueue_style('main-css', DEF_STYLE. 'main.css', array(), date('YmdHis'));
         wp_enqueue_style('style-css', DEF_STYLE. 'style.css', array(), date('YmdHis'));
+        wp_enqueue_style('jssor-css.slider', DEF_LIBS. 'jssor.slider/jssor.slider.css', array(), date('YmdHis'));
         //load javascript
         wp_enqueue_script('lib-js', DEF_JS. 'libs.js', array());
         wp_enqueue_script('script-js', DEF_JS. 'script.js', array());
+        wp_enqueue_script('slider-js', DEF_LIBS. 'jssor.slider/jssor.slider-28.0.0.min.js', array());
     }
     add_action ( 'wp_enqueue_scripts', 'fl_scripts' );
+}
+if (!function_exists('fl_init')) {
+    function fl_init() {
+        //Removes unused functions for custom post types
+        $support_diff = array(
+            'excerpt',
+            'comments',
+            'trackbacks',
+            'revisions',
+            'custom-fields'
+        );
+        //Banners home page
+        $banner_post_type_args = array(
+            'post_type' => 'slider_cpt',
+            'post_type_slug' => '',
+            'support_diff' => array_merge($support_diff, array('editor')),
+            'post_type_name' => 'slider',
+            'post_type_singular_name' => 'slider',
+            'menu_icon' => 'dashicons-slides',
+            'is_public' => false
+        );
+        create_custom_post_type($banner_post_type_args);
+        //Hidden menu bar frontend page after logging into admin page
+        if (!is_admin()) {
+            show_admin_bar(false);
+        }
+        //Call session
+        if(!session_id()) {
+            session_start();
+        }
+        ob_start();
+    }
+    add_action('init', 'fl_init', 0);
 }
 
 // To change add to cart text on product archives(Collection) page

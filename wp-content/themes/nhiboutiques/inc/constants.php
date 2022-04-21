@@ -8,10 +8,10 @@ define('DEF_SCRIPTS', DEF_THEMEROOT . '/js/');
 //The path to css directory
 define('DEF_STYLE', DEF_THEMEROOT . '/css/');
 //The path to vendor directory
-define('DEF_VENDOR', DEF_THEMEROOT . '/js/vendor/');
+define('DEF_LIBS', DEF_THEMEROOT . '/js/libs/');
 define('DEF_JS', DEF_THEMEROOT . '/js/');
 //The path to template-parts folder
-define('TEMPLATES_PARTS', 'template-parts/pages/content');
+define('TEMPLATES_PARTS', 'template-parts/content');
 //Defines a text domain for multiple languages
 define('TEXTDOMAIN', 'harai');
 //Custom post type page
