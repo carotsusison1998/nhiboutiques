@@ -138,13 +138,13 @@ a:hover, button:hover, .btn:hover, .btn-user:hover {
 	-ms-filter: "alpha(opacity=100)" !important;
 }
 .container {
-	margin: 0 auto;
-	max-width: 1150px;
-	padding-left: 20px;
-	padding-right: 20px;
-	position: relative;
-	z-index: 10;
+	background-color: #fff7f8;
+  margin: 0 auto;
+  max-width: 1450px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
+  z-index: 10;
 }
 .container-inner{
 	display: inline-table;

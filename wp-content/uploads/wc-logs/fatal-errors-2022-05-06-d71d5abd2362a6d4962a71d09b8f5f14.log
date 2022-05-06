@@ -1,0 +1,52 @@
+2022-05-06T02:35:16+00:00 CRITICAL Uncaught TypeError: array_intersect_key(): Argument #1 ($array) must be of type array, bool given in D:\Php\wordpress\nhiboutiques\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php:87
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(87): array_intersect_key(false, Array)
+#1 D:\Php\wordpress\nhiboutiques\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(61): Automattic\WooCommerce\Pinterest\TrackerSnapshot::parse_settings()
+#2 D:\Php\wordpress\nhiboutiques\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php(43): Automattic\WooCommerce\Pinterest\TrackerSnapshot::include_snapshot_data(Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): Automattic\WooCommerce\Pinterest\TrackerSnapshot::Automattic\WooCommerce\Pinterest\{closure}(Array)
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(189): WP_Hook->apply_filters(Array, Array)
+#5 D:\Php\wordpress\nhiboutiques\wp-content\plugins\woocommerce\includes\class-wc-tracker.php(175): apply_filters('woocommerce_tra...', Array)
+#6 D:\Php\wordpress\nhiboutiques\wp-content\plugins\woocommerce\includes\class-wc-tracker.php(64): WC_Tracker::get_tracking_data()
+#7 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): WC_Tracker::send_tracking_data()
+#8 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#9 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(522): WP_Hook->do_action(Array)
+#10 D:\Php\wordpress\nhiboutiques\wp-cron.php(138): do_action_ref_array('woocommerce_tra...', Array)
+#11 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\plugins\pinterest-for-woocommerce\src\TrackerSnapshot.php on line 87
+
+2022-05-06T03:01:23+00:00 CRITICAL Uncaught Error: Failed opening required 'D:\Php\wordpress\nhiboutiques/wp-content/themes/nhiboutiques/inc/custom-metabox.php' (include_path='C:\xampp\php\PEAR') in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php:9
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-settings.php(555): include()
+#1 D:\Php\wordpress\nhiboutiques\wp-config.php(96): require_once('D:\\Php\\wordpres...')
+#2 D:\Php\wordpress\nhiboutiques\wp-load.php(50): require_once('D:\\Php\\wordpres...')
+#3 D:\Php\wordpress\nhiboutiques\wp-admin\admin-ajax.php(22): require_once('D:\\Php\\wordpres...')
+#4 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php on line 9
+
+2022-05-06T03:01:35+00:00 CRITICAL Uncaught Error: Undefined constant "DEF_VENDOR" in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php:232
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): fl_scripts('')
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-includes\script-loader.php(2115): do_action('wp_enqueue_scri...')
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): wp_enqueue_scripts('')
+#5 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#7 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(3042): do_action('wp_head')
+#8 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\header.php(25): wp_head()
+#9 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once('D:\\Php\\wordpres...')
+#10 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#11 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\404.php(10): get_header()
+#13 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#14 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#15 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#16 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php on line 232
+
+2022-05-06T03:04:02+00:00 CRITICAL syntax error, unexpected token "}" in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php on line 276
+
+2022-05-06T03:04:05+00:00 CRITICAL syntax error, unexpected token "}" in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php on line 276
+
+2022-05-06T03:04:06+00:00 CRITICAL syntax error, unexpected token "}" in D:\Php\wordpress\nhiboutiques\wp-content\themes\nhiboutiques\functions.php on line 276
+

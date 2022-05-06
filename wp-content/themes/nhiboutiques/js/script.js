@@ -66,7 +66,7 @@
           Libs.setContentHeight({
             elem: 'h2.woocommerce-loop-product__title',
             breakLine: 300,
-            rowNumber: 5,
+            rowNumber: 6,
             minBreakLine: 300
           });
         },

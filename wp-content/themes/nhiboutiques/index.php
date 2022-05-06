@@ -20,6 +20,7 @@ get_header();
         	<?php echo get_template_part(TEMPLATES_PARTS, 'slider');?>
         <!-- //slideshow -->
 		<div class="products-main">
+			<h2 class="title-product">Sản Phẩm Mới</h2>
 			<ul class="new-products">
 			<?php 
 				if ( is_front_page() ){
