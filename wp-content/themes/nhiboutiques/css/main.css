@@ -1,9 +1,10 @@
 @charset "UTF-8";
 :root{
-    --main-color: #ff9AA2;
+    --main-color: #f2264d;
     --white-bg: #ffffff;
     --black-color: #111111;
     --border-color: #dddddd;
+    --second-color: #ff9AA2;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -39,7 +40,7 @@ html {
 }
 body {
 	cursor: auto;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 170%;
   color: #111;
   font-size: 1rem;
@@ -138,7 +139,7 @@ a:hover, button:hover, .btn:hover, .btn-user:hover {
 	-ms-filter: "alpha(opacity=100)" !important;
 }
 .container {
-	background-color: #fff7f8;
+	background-color: #ffffff;
   margin: 0 auto;
   max-width: 1450px;
   padding-left: 20px;
@@ -203,7 +204,7 @@ input[type=password],
 input[type=button],
 select
 {
-    height: 36px;
+    height: 40px;
     border: 1px solid #aeaeae;
     padding: 5px;
     font-size: 1rem;
@@ -268,6 +269,11 @@ table
 .alignright {
     float: right;
     margin: 0.5em 0 0.5em 1em;
+}
+h2{
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0;
 }
 /* ==============================================================
 * ========================= Header ==============================
@@ -353,5 +359,19 @@ table
 }
 /* ==============================================================
 * ========================= End Header ==========================
+* ===============================================================
+*/
+/* ==============================================================
+* ========================= Footer ==============================
+* ===============================================================
+*/
+.site-footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ==============================================================
+* ========================= End Footer ==========================
 * ===============================================================
 */

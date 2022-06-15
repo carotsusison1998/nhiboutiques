@@ -264,3 +264,53 @@ function woocommerce_custom_product_add_to_cart_text() {
     return __( 'Thêm giỏ hàng', 'woocommerce' );
 }
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+// removing payment method 
+add_filter('woocommerce_cart_needs_payment', '__return_false');
+
+function wpse_remove_edit_post_link( $link ) {
+    return '';
+}
+add_filter('edit_post_link', 'wpse_remove_edit_post_link');
+
+
+add_filter( 'gettext', 'hocwordpress_translate_woocommerce_strings', 999 );
+function hocwordpress_translate_woocommerce_strings( $translated ) {
+	$translated = str_ireplace( 'Description', 'Mô tả', $translated );
+	$translated = str_ireplace( 'Additional information', 'Thông tin thêm', $translated );
+	$translated = str_ireplace( 'Related products', 'Sản Phẩm Liên Quan', $translated );
+	$translated = str_ireplace( 'Add to cart', 'Thêm giỏ hàng', $translated );
+	$translated = str_ireplace( 'Previous:', 'Sản phẩm trước', $translated );
+	$translated = str_ireplace( 'Next:', 'Sản phẩm sau', $translated );
+	$translated = str_ireplace( 'Weight', 'Cân nặng', $translated );
+	$translated = str_ireplace( 'Your Cart is currently empty.', 'Giỏ hàng của bạn đang trống!', $translated );
+	$translated = str_ireplace( 'Return to shop', 'Trở về cửa hàng', $translated );
+	$translated = str_ireplace( 'Default sorting', 'Lọc sản phẩm', $translated );
+	$translated = str_ireplace( 'Sort by popularity', 'Lọc theo độ phổ biến', $translated );
+	$translated = str_ireplace( 'Sort by average rating', 'Lọc theo đánh giá', $translated );
+	$translated = str_ireplace( 'Sort by latest', 'Lọc sản phẩm cũ nhất', $translated );
+	$translated = str_ireplace( 'Sort by price: low to high', 'Lọc theo giá sản phẩm (tăng dần)', $translated );
+	$translated = str_ireplace( 'Sort by price: high to low', 'Lọc theo giá sản phẩm (giảm dần)', $translated );
+	$translated = str_ireplace( 'in stock', 'sản phẩm trong kho', $translated );
+	$translated = str_ireplace( 'has been added to your cart', ' đã được thêm vào giỏ hàng.', $translated );
+	$translated = str_ireplace( 'View cart', ' Xem giỏ hàng', $translated );
+	$translated = str_ireplace( 'Update cart', ' Cập nhật giỏ hàng', $translated );
+	$translated = str_ireplace( 'Product', ' Sản phẩm', $translated );
+	$translated = str_ireplace( 'Price', ' Giá', $translated );
+	$translated = str_ireplace( 'Quantity', ' Số lượng', $translated );
+	$translated = str_ireplace( 'Subtotal', ' Thành tiền', $translated );
+	$translated = str_ireplace( 'Apply coupon', ' Nhập khuyến mãi', $translated );
+	$translated = str_ireplace( 'coupon', 'nhập mã', $translated );
+	$translated = str_ireplace( 'Cart totals', 'Tổng đơn hàng', $translated );
+	$translated = str_ireplace( 'Total', 'Tổng', $translated );
+	$translated = str_ireplace( 'Proceed to checkout', 'Đặt hàng', $translated );
+	$translated = str_ireplace( 'First name', 'Tên', $translated );
+	$translated = str_ireplace( 'Last name', 'Họ', $translated );
+	$translated = str_ireplace( 'Display name', 'Tên hiển thị', $translated );
+	$translated = str_ireplace( 'Email address', 'Email', $translated );
+	$translated = str_ireplace( 'Password change', 'Thay đổi mật khẩu', $translated );
+	$translated = str_ireplace( 'Current password (leave blank to leave unchanged)', 'Mật khẩu hiện tại', $translated );
+	$translated = str_ireplace( 'New password (leave blank to leave unchanged)', 'Mật khẩu mới', $translated );
+	$translated = str_ireplace( 'Confirm new password', 'Nhập lại mật khẩu mới', $translated );
+	$translated = str_ireplace( 'Save changes', 'Lưu thay đổi', $translated );
+	return $translated;
+}

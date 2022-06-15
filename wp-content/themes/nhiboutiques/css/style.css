@@ -2,60 +2,79 @@
 * ========================= Production ==========================
 * ===============================================================
 */
+#page{
+    background-color: #f5f5f5;
+}
+#masthead.site-header,
+#masthead.site-header .container{
+    background-color: #f7e2e4;
+}
 .products-main{
-	background-color: #fff7f8;
     margin: 0 auto;
     max-width: 1450px;
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
+    height: 980px;
     z-index: 10;
 }
 .products-main .title-product{
-    padding: 28px 10px 4px 10px;
+    padding: 60px 6px 14px 6px;
     font-weight: bold;
 }
-.new-products{
-	display: flex;
+.products{
+	/*display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	position: relative;
+	position: relative;*/
 }
-.new-products .product{
-	width: calc(100% / 6);
+.products .product{
 	padding: 10px;
     border: 1px solid transparent;
 	position: relative;
     margin-bottom: 10px;
+    padding: 10px !important;
+    /*border: 1px solid var(--main-color);*/
+    float: left;
+    width: 19%;
+    margin: 0 0.5% 1em 0.5%;
+    background-color: #ffffff;
+    box-shadow: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 10%);
 }
-.new-products .product:hover{
+.products .product:hover{
 	border-color: var(--main-color);
 }
-.new-products .product img{
+.products .product img{
 	width: 100%;
 	height: auto;
 }
-.new-products .product .onsale{
+.products .product .onsale{
 	position: absolute;
 }
-.new-products .product a{
+.products .product a{
 	color: var(--black-color);
 	font-size: 16px;
 }
-.new-products .product a .woocommerce-loop-product__title{
+.products .product a .woocommerce-loop-product__title{
 	font-size: 16px;
 	margin-top: 8px;
+    font-weight: 400 !important;
 }
-.new-products .product a .price{
+.products .product a .price{
 	font-size: 16px;
 }
-.new-products .product .add_to_cart_button.ajax_add_to_cart{
+button.single_add_to_cart_button.button,
+.products .product .add_to_cart_button.ajax_add_to_cart{
 	display: block;
-    background-color: var(--main-color);
+    background-color: var(--main-color) !important;
     color: #ffffff;
     text-align: center;
+    border-radius: 4px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
-.new-products li.product .onsale{
+.products li.product .onsale{
 	top: 0;
     right: 0;
     left: auto;
@@ -75,11 +94,18 @@
     font-size: 0.857em;
     z-index: 9;
 }
-/* ==============================================================
-* ========================= End Production ======================
-* ===============================================================
+.products li.product .onsale{
+    right: 4px;
+    top: 4px;
+}
+.woocommerce ul.products li.product .onsale{
+    right: 10px;
+    top: 10px;
+}
+/*  ==============================================================
+    ========================= End Production ======================
+    ===============================================================
 */
-
 .share
 {
     margin-top: 35px;
@@ -110,6 +136,7 @@
 }
 .banner{
     width: 100%;
+    border-bottom: 1px solid #ddd;
 }
 .home .banner .container
 {
@@ -135,3 +162,63 @@
         padding-right: 0;
     }
 }
+/* ==============================================================
+* ========================= single-product ======================
+* ===============================================================
+*/
+header.entry-header{
+    margin: 0 auto;
+    max-width: 1450px;
+    width: 100%;
+    z-index: 10;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+body:not(.home) #primary.site-main{
+    margin: 0 auto;
+    max-width: 1450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    z-index: 10;
+}
+.woocommerce .single-product .flex-viewport{
+    margin-bottom: 20px; 
+}
+.navigation .nav-links .nav-title{
+    display: none;
+}
+.navigation .nav-links .nav-previous .nav-subtitle{
+    padding-left: 30px;
+    color: var(--main-color);
+}
+.navigation .nav-links .nav-next .nav-subtitle{
+    padding-right: 30px;
+    color: var(--main-color);
+}
+.navigation .nav-links .nav-previous,
+.navigation .nav-links .nav-next{
+    position: relative;
+}
+.navigation .nav-links .nav-previous .nav-subtitle:before{
+    content: "\f137";
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+    color: var(--main-color);
+}
+.navigation .nav-links .nav-next .nav-subtitle:before{
+    content: "\f138";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    color: var(--main-color);
+}
+/*.nav-previous*/
+/* ==============================================================
+* ========================= end single-product ==================
+* ===============================================================
+*/
