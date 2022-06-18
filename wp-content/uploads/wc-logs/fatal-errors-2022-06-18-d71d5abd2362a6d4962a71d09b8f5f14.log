@@ -1,0 +1,48 @@
+2022-06-18T07:44:38+00:00 CRITICAL Uncaught Error: Call to undefined function get_sale_price() in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php:42
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include()
+#1 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#2 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#3 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php on line 42
+
+2022-06-18T07:44:39+00:00 CRITICAL Uncaught Error: Call to undefined function get_sale_price() in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php:42
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include()
+#1 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#2 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#3 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php on line 42
+
+2022-06-18T07:58:08+00:00 CRITICAL Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, WP_Error given in D:\Php\wordpress\nhiboutiques\wp-includes\formatting.php:4357
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\formatting.php(4357): ltrim(Object(WP_Error))
+#1 D:\Php\wordpress\nhiboutiques\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1220): esc_url(Object(WP_Error))
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): woocommerce_template_loop_category_link_open(NULL)
+#3 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(42): do_action('woocommerce_bef...', NULL)
+#6 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#7 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#8 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#9 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-includes\formatting.php on line 4357
+
+2022-06-18T07:58:09+00:00 CRITICAL Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, WP_Error given in D:\Php\wordpress\nhiboutiques\wp-includes\formatting.php:4357
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\formatting.php(4357): ltrim(Object(WP_Error))
+#1 D:\Php\wordpress\nhiboutiques\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1220): esc_url(Object(WP_Error))
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(307): woocommerce_template_loop_category_link_open(NULL)
+#3 D:\Php\wordpress\nhiboutiques\wp-includes\class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\plugin.php(474): WP_Hook->do_action(Array)
+#5 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(42): do_action('woocommerce_bef...', NULL)
+#6 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#7 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#8 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#9 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-includes\formatting.php on line 4357
+
+2022-06-18T08:13:04+00:00 CRITICAL syntax error, unexpected token ">" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php on line 43
+
+2022-06-18T08:55:02+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\Php\wordpress\nhiboutiques\wp-includes\query.php on line 936
+
