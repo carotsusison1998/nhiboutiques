@@ -62,11 +62,13 @@ wp_head(); ?>
 			<?php do_action('excellent_site_branding'); //<!-- end .custom-logo-link -->
 			$search_form = $excellent_settings['excellent_search_custom_header'];
 			if (1 != $search_form) { ?>
-				<button id="search-toggle" class="header-search" type="button"></button>
-				<div id="search-box" class="clearfix">
-					<?php get_search_form();?>
-				</div>  <!-- end #search-box -->
+				<!-- <button id="search-toggle" class="header-search" type="button"></button> -->
+				<?php get_search_form();?>
 			<?php } ?>
+			<div class="woo-action">
+				<a href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>" title="Tài khoản của bạn"><i class="fa-solid fa-user"></i></a>
+				<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" title="Giỏ hàng của bạn"><i class="fa-solid fa-cart-plus"></i></a>
+			</div>
 		</div>
 	</div><!-- end .top-header -->
 	<!-- Main Header============================================= -->

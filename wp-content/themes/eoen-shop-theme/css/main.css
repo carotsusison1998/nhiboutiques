@@ -1,3 +1,26 @@
 .price ins{
     margin-bottom: 0;
 }
+.d-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.top-header .wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.top-header .wrap .search-form{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin: 0 20px;
+}
+.top-header .wrap .woo-action{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    justify-content: space-around;
+}
+.top-header .wrap .woo-action a{
+    font-size: 24px;
+}
