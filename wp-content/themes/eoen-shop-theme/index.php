@@ -42,7 +42,8 @@ get_header(); ?>
 								<h2 class="woocommerce-loop-product__title"><?=get_the_title();?></h2>
 								<?php echo $product->get_price_html();?>
 							</a>
-							<a href="?add-to-cart=18" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="18" data-product_sku="" aria-label="Add “Áo thun Hades SAIGON SPIRIT BLACK nam nữ áo thun tay lỡ hades sài gòn Full tag” to your cart" rel="nofollow">Add to cart</a>
+							<br>
+							<a href="?add-to-cart=18" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="18" data-product_sku="" aria-label="" rel="nofollow">Thêm giỏ hàng</a>
 						</li>
 				<?php
 						// echo '<br /><a href="'.get_permalink().'">' . woocommerce_get_product_thumbnail().' '.get_the_title().'</a>';

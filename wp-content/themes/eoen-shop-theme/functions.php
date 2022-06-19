@@ -304,3 +304,20 @@ function lw_search_filter_pages($query) {
     }
     return $query;
 }
+/** 
+ * ----------------------------------------------------------------------------------------
+ * Add js and css
+ * ----------------------------------------------------------------------------------------
+ */
+if (!function_exists('fl_scripts')) {
+    function fl_scripts() {
+        //load css
+        //load javascript
+		// wp_enqueue_style( 'my-styles', get_stylesheet_directory_uri() . '/min/mycss.css', array(), '1.0', 'all' );
+		// wp_enqueue_script( 'jquery-scripts', get_stylesheet_directory_uri() . '/js/jquery/jquery-3.2.1.min.js', array(), '1.0', true );
+		// wp_enqueue_script( 'jquery-scripts', get_stylesheet_directory_uri() . '/js/sticky/jquery.sticky.js', array(), '1.0', true );
+		// wp_enqueue_script( 'libs-scripts', get_stylesheet_directory_uri() . '/js/libs.js', array(), '1.0', true );
+		// wp_enqueue_script( 'main-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0', true );
+    }
+    add_action ( 'wp_enqueue_scripts', 'fl_scripts' );
+}

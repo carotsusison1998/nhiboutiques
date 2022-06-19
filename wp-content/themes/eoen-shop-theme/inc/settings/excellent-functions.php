@@ -168,8 +168,14 @@ function excellent_scripts() {
 	wp_enqueue_script('excellent-main', get_template_directory_uri().'/js/excellent-main.js', array('jquery'), false, true);
 	$excellent_stick_menu = $excellent_settings['excellent_stick_menu'];
 	if($excellent_stick_menu != 1):
+		wp_enqueue_style( 'my-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '1.0', 'all' );
+
+
+		wp_enqueue_script('jquery-script', get_template_directory_uri().'/js/jquery/jquery-3.2.1.min.js', array('jquery'), false, true);
 		wp_enqueue_script('jquery-sticky', get_template_directory_uri().'/assets/sticky/jquery.sticky.min.js', array('jquery'), false, true);
-	wp_enqueue_script('excellent-sticky-settings', get_template_directory_uri().'/assets/sticky/sticky-settings.js', array('jquery'), false, true);
+		wp_enqueue_script('excellent-sticky-settings', get_template_directory_uri().'/assets/sticky/sticky-settings.js', array('jquery'), false, true);
+		wp_enqueue_script('libs-script', get_template_directory_uri().'/js/libs.js', array('jquery'), false, true);
+		wp_enqueue_script('main-script', get_template_directory_uri().'/js/script.js', array('jquery'), false, true);
 	endif;
 	// Load the html5 shiv.
 	wp_enqueue_script( 'html5', get_template_directory_uri() . '/js/html5.js', array(), '3.7.3' );
