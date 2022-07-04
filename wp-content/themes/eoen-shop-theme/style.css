@@ -4086,7 +4086,7 @@ div.bbp-template-notice, div.indicator-hint {
 }
 
 .woocommerce .quantity .qty {
-	height: 34px;
+	/* height: 34px; */
 }
 
 .woocommerce span.onsale {

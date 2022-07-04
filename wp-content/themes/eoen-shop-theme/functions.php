@@ -304,20 +304,40 @@ function lw_search_filter_pages($query) {
     }
     return $query;
 }
-/** 
- * ----------------------------------------------------------------------------------------
- * Add js and css
- * ----------------------------------------------------------------------------------------
- */
-if (!function_exists('fl_scripts')) {
-    function fl_scripts() {
-        //load css
-        //load javascript
-		// wp_enqueue_style( 'my-styles', get_stylesheet_directory_uri() . '/min/mycss.css', array(), '1.0', 'all' );
-		// wp_enqueue_script( 'jquery-scripts', get_stylesheet_directory_uri() . '/js/jquery/jquery-3.2.1.min.js', array(), '1.0', true );
-		// wp_enqueue_script( 'jquery-scripts', get_stylesheet_directory_uri() . '/js/sticky/jquery.sticky.js', array(), '1.0', true );
-		// wp_enqueue_script( 'libs-scripts', get_stylesheet_directory_uri() . '/js/libs.js', array(), '1.0', true );
-		// wp_enqueue_script( 'main-scripts', get_stylesheet_directory_uri() . '/js/script.js', array(), '1.0', true );
-    }
-    add_action ( 'wp_enqueue_scripts', 'fl_scripts' );
+
+// add_action( 'wp_footer', 'bbloomer_cart_refresh_update_qty' ); 
+ 
+// function bbloomer_cart_refresh_update_qty() {
+//    if ( is_cart() || ( is_cart() && is_checkout() ) ) {
+// 		wc_enqueue_js( "
+// 			$('div.woocommerce').on('change', 'input.qty', function(){
+// 				$('[name=\'update_cart\']').trigger('click');
+// 			});
+// 		" );
+//    }
+// }
+
+add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
+function iconic_cart_count_fragments( $fragments ) {
+    $fragments['div.header-cart-count'] = '<div class="header-cart-count">' . WC()->cart->get_cart_contents_count() . '</div>';
+    return $fragments;
+}
+
+function get_sub_categogy_by_slug($parent_cat_NAME) {
+	$IDbyNAME = get_term_by('slug', $parent_cat_NAME, 'product_cat');
+	$product_cat_ID = $IDbyNAME->term_id;
+	$args = array(
+		'hierarchical' => 1,
+		'show_option_none' => '',
+		'hide_empty' => 0,
+		'parent' => $product_cat_ID,
+		'taxonomy' => 'product_cat'
+	);
+	$subcats = get_categories($args);
+	echo '<ul class="wooc_sclist">';
+	foreach ($subcats as $sc) {
+		$link = get_term_link( $sc->slug, $sc->taxonomy );
+		echo '<li><a href="'. $link .'">'.$sc->name.'</a></li>';
+	}
+	echo '</ul>';
 }

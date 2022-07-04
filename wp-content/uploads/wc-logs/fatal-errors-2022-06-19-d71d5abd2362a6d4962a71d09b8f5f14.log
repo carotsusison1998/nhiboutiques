@@ -40,3 +40,99 @@ Stack trace:
 #16 {main}
   thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php on line 316
 
+2022-06-19T11:59:13+00:00 CRITICAL Uncaught Error: Undefined constant "wp_is_mobile" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:32
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(11): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 32
+
+2022-06-19T11:59:13+00:00 CRITICAL Uncaught Error: Undefined constant "wp_is_mobile" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:32
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(11): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 32
+
+2022-06-19T11:59:18+00:00 CRITICAL Uncaught Error: Undefined constant "wp_is_mobile" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:32
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(11): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 32
+
+2022-06-19T11:59:44+00:00 CRITICAL Uncaught Error: Undefined constant "wp_is_mobile" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:32
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(11): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 32
+
+2022-06-19T16:08:28+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_update_cart_action_cart_updated() in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:70
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(11): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 70
+
+2022-06-19T16:08:29+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_update_cart_action_cart_updated() in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:70
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\page.php(10): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 70
+
+2022-06-19T16:23:05+00:00 CRITICAL Uncaught Error: Call to undefined function count_item_in_cart() in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:70
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\index.php(11): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 70
+
+2022-06-19T16:23:06+00:00 CRITICAL Uncaught Error: Call to undefined function count_item_in_cart() in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php:70
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(770): require_once()
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template.php(716): load_template('D:\\Php\\wordpres...', true, Array)
+#2 D:\Php\wordpress\nhiboutiques\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\page.php(10): get_header()
+#4 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#5 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#6 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#7 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\header.php on line 70
+

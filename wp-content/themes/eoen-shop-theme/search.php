@@ -24,9 +24,8 @@ get_header(); ?>
 				} else { ?>
 				</ul>
 				<h2 class="entry-title">
-					<?php get_search_form(); ?>
 					<p>&nbsp; </p>
-					<?php esc_html_e( 'No Posts Found.', 'excellent' ); ?>
+					<?php esc_html_e( 'Không có sản phẩm bạn cần tìm.', 'excellent' ); ?>
 				</h2>
 				<?php }
 				get_template_part( 'pagination', 'none' ); ?>

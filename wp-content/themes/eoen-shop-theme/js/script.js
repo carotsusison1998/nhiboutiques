@@ -59,42 +59,33 @@
                 //   return;
                 // }
                 Libs.setContentHeight({
-                    elem: 'h2.woocommerce-loop-product__title',
+                    elem: '.product-new h2.woocommerce-loop-product__title',
                     breakLine: 300,
                     rowNumber: 6,
                     minBreakLine: 300
                 });
+            },
+            productItemHeightOrder: function(){
+                // if ($('.new-products .products .product h2.woocommerce-loop-product__title').length <=0) {
+                //   return;
+                // }
+                Libs.setContentHeight({
+                    elem: 'product-order h2.woocommerce-loop-product__title',
+                    breakLine: 300,
+                    rowNumber: 6,
+                    minBreakLine: 300
+                });
+            },
+            spLide: function(){
+                var splide = new Splide( '.splide', {
+                    type   : 'loop',
+                    perPage: 5,
+                    focus  : 'center',
+                    pagination: false,
+                    autoplay: true
+                } );
+                splide.mount();
             }
-            
-            // directorItemHeight:function(){
-            // Libs.setContentHeight({
-            //     elem: '.harai-page .director .content .item .title-name',
-            //     breakLine: 300,
-            //     minBreakLine: 300
-            // });
-            // },
-            
-            // introductionItemHeight:function(){
-            // if ($('.harai-page .introduction .content .item .watch').length <=0
-            // ) {
-            //     return;
-            // }
-            // Libs.setContentHeight({
-            //     elem: '.harai-page .introduction .content .item .title-name .name',
-            //     breakLine: 300,
-            //     rowNumber: 4,
-            //     minBreakLine: 300
-            // });
-            // },
-            // haraiLogout: function(){
-            //     try {
-            //         var url = ajaxUrl+'harai_logout';
-            //         FLHttp.post(url, '').success(function(res){
-            //             window.location.href= res.data;
-            //         });
-            //     } catch (e) {
-            //     }
-            // }
         }
         /**
          * Define events for all screens
@@ -121,6 +112,8 @@
             //Open the menu for a smartphone monitor
             // Libs.spMenuToggle();
             self.productItemHeight();
+            self.productItemHeightOrder();
+            self.spLide();
             //Call events
             buildEvents._buildEvents();
         });

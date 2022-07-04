@@ -1,0 +1,31 @@
+2022-07-04T15:28:30+00:00 CRITICAL syntax error, unexpected token ">" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php on line 358
+
+2022-07-04T15:28:54+00:00 CRITICAL Cannot redeclare get_sub_categogy_by_slug() (previously declared in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php:326) in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php on line 338
+
+2022-07-04T15:30:33+00:00 CRITICAL Uncaught Error: Undefined constant "length" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php:347
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\page-templates\products-template.php(16): get_sub_categogy_by_slug('san-pham')
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#2 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#3 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#4 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php on line 347
+
+2022-07-04T15:30:35+00:00 CRITICAL Uncaught Error: Undefined constant "length" in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php:347
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\page-templates\products-template.php(16): get_sub_categogy_by_slug('san-pham')
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#2 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#3 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#4 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php on line 347
+
+2022-07-04T15:31:32+00:00 CRITICAL Uncaught Error: Value of type null is not callable in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php:346
+Stack trace:
+#0 D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\page-templates\products-template.php(16): get_sub_categogy_by_slug('san-pham')
+#1 D:\Php\wordpress\nhiboutiques\wp-includes\template-loader.php(106): include('D:\\Php\\wordpres...')
+#2 D:\Php\wordpress\nhiboutiques\wp-blog-header.php(19): require_once('D:\\Php\\wordpres...')
+#3 D:\Php\wordpress\nhiboutiques\index.php(17): require('D:\\Php\\wordpres...')
+#4 {main}
+  thrown in D:\Php\wordpress\nhiboutiques\wp-content\themes\eoen-shop-theme\functions.php on line 346
+

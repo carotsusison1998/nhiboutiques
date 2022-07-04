@@ -29,7 +29,7 @@ wp_head(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#site-content-contain"><?php esc_html_e('Skip to content','excellent');?></a>
 <!-- Masthead ============================================= -->
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header <?php if ( wp_is_mobile() ){echo 'mobile';} ?>" role="banner">
 	<div class="custom-header">
 		<div class="custom-header-media">
 		<?php the_custom_header_markup(); ?>
@@ -67,7 +67,10 @@ wp_head(); ?>
 			<?php } ?>
 			<div class="woo-action">
 				<a href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>" title="Tài khoản của bạn"><i class="fa-solid fa-user"></i></a>
-				<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" title="Giỏ hàng của bạn"><i class="fa-solid fa-cart-plus"></i></a>
+				<a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" title="Giỏ hàng của bạn">
+					<i class="fa-solid fa-cart-plus"></i>
+					<div class="header-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+				</a>
 			</div>
 		</div>
 	</div><!-- end .top-header -->
@@ -99,6 +102,15 @@ wp_head(); ?>
 						<span class="line-three"></span>
 					</button><!-- end .menu-toggle -->
 					<?php wp_nav_menu($args);//extract the content from apperance-> nav menu ?>
+					<div class="form-search-mobile">
+						<?php
+						$search_form = $excellent_settings['excellent_search_custom_header'];
+						if (1 != $search_form) { ?>
+							<!-- <button id="search-toggle" class="header-search" type="button"></button> -->
+							<?php get_search_form();?>
+						<?php } ?>
+						
+					</div>
 				</nav> <!-- end #site-navigation -->
 				<?php } else {// extract the content from page menu only ?>
 				<nav id="site-navigation" class="main-navigation clearfix" role="navigation"  aria-label="<?php esc_attr_e('Main Menu','excellent');?>">
@@ -113,34 +125,14 @@ wp_head(); ?>
 			</div> <!-- end .header-navigation-wrap -->
 		</div> <!-- end .wrap -->
 	</div><!-- end #sticky-header -->
-	<!-- Main Slider ============================================= -->
-	<?php
-		$enable_slider = $excellent_settings['excellent_enable_slider'];
-		if(is_home()) {
-			excellent_category_sliders();
-		}
-		// if ($enable_slider=='frontpage'|| $enable_slider=='enitresite'){
-		// 	 if(is_front_page() && ($enable_slider=='frontpage') ) {
-		// 		if($excellent_settings['excellent_slider_type'] == 'default_slider') {
-		// 				excellent_category_sliders();
-		// 		}else{
-		// 			if(class_exists('Excellent_Plus_Features')):
-		// 				do_action('excellent_image_sliders');
-		// 			endif;
-		// 		}
-		// 	}
-		// 	if($enable_slider=='enitresite'){
-		// 		if($excellent_settings['excellent_slider_type'] == 'default_slider') {
-		// 				excellent_category_sliders();
-		// 		}else{
-		// 			if(class_exists('Excellent_Plus_Features')):
-		// 				do_action('excellent_image_sliders');
-		// 			endif;
-		// 		}
-		// 	}
-		// } 
-		?>
 </header> <!-- end #masthead -->
+<!-- Main Slider ============================================= -->
+<?php
+	$enable_slider = $excellent_settings['excellent_enable_slider'];
+	if(is_home()) {
+		excellent_category_sliders();
+	}
+?>
 <?php
 $excellent_display_page_single_featured_image = $excellent_settings['excellent_display_page_single_featured_image'];
 if(is_single() || is_page()){
